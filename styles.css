@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+.navbar {
+  flex-direction: column;
+  border-bottom: ;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 1rem;
+  background: linear-gradient(190deg, rgb(78, 77, 77) 0%, rgba(153,144,148,1) 82%);
+}
+
+.navbar .brand {
+  flex: 1;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/*
+.navbar .menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+*/
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  padding: 1rem;
+}
+
+.navbar ul li a:hover {
+  color: rgb(39, 162, 211);
+}
+
+/* Responsive styles */
+@media (max-width: 468px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: flex;
+    top: 60px;
+    right: 0;
+    background-color: rgba(78, 77, 77, 0.9);
+    width: 100%;
+    padding-top: 1rem;
+  }
+/*
+  .navbar .menu-icon {
+    display: block;
+  }
+*/
+  .navbar ul.show {
+    display: flex;
+  }
+}
+
+p {
+  background-image: url(/Bilder/wowbackground.png);
+}
